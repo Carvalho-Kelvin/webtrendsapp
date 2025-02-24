@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     } else {
       console.error("User not authenticated. Please sign in first.");
       // Optionally, redirect to the sign-in page:
-      window.location.href = "../index.html";
+      window.location.href = "index.html";
     }
   });
 
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async function() {
          await signOut(auth);
          console.log("User signed out successfully.");
          // Redirect to the login page (adjust the path if necessary)
-         window.location.href = "../app/index.html";
+         window.location.href = "index.html";
        } catch (error) {
          console.error("Error signing out:", error);
        }
