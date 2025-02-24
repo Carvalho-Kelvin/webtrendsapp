@@ -8,7 +8,7 @@ if (!signInBttn) {
   console.error("Sign In button not found in the DOM.");
 }
 
-const sw = new URL('../service-worker.js', import.meta.url);
+const sw = new URL('service-worker.js', import.meta.url);
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register(sw.href, { scope: '/' })
     .then(() => console.log('Service Worker Registered for scope:', sw.href))
