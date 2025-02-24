@@ -1,0 +1,26 @@
+{
+    "short_name": "HabitTracker",
+    "name": "Habit Tracker App",
+    "icons": [
+      {
+        "src": "./icons/favicon.ico",
+        "type": "image/x-icon",
+        "sizes": "64x64"
+      },
+      {
+        "src": "./icons/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "./icons/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#0078D7",
+    "background_color": "#ffffff"
+  }
+  

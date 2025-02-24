@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habit Tracker - Main</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Habit Tracker</h1>
+    </header>
+    <section id="habit-form">
+      <form id="addHabitForm">
+        <input type="text" id="habitName" placeholder="Enter habit name" required>
+        <input type="number" id="habitGoal" placeholder="Daily goal (e.g., 10)" required>
+        <input type="text" id="habitUnit" placeholder="Unit (e.g., pages)" required>
+        <button type="submit">Add Habit</button>
+      </form>
+    </section>
+    <!-- Active habits section -->
+    <section id="active-habits">
+      <h2>Actual Habits</h2>
+      <ul id="habits"></ul>
+    </section>
+    <!-- Completed habits section -->
+    <section id="completed-habits">
+      <h2>Completed Habits</h2>
+      <ul id="completedHabits"></ul>
+    </section>
+    <button id="logout">Log Out</button>
+  </div>
+
+  <!-- Firebase Libraries and Tidio Chatbot -->
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-database-compat.js"></script>
+  <script src="https://code.tidio.co/enfi0ocz1okcpgll3ds4c7rqybtm0b1k.js" async></script>
+
+  <!-- Custom Scripts -->
+  <script type="module" src="../scripts/firebase.js"></script>
+  <script type="module" src="../scripts/habits.js"></script>
+</body>
+</html>

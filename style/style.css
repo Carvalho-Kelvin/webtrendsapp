@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #0078D7;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Main Content */
+main, #app {
+  flex: 1;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background-color: #0078D7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005bb5;
+}
+
+/* Habit List */
+section {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  border-bottom: 2px solid #0078D7;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li .habit-text {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+ul li .progress {
+  margin-right: 1rem;
+  color: #555;
+}
+
+/* Buttons in habit items */
+ul li button {
+  background-color: #0078D7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background-color: #005bb5;
+}
+
+/* Completed Habit Style */
+li.completed {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+/* Undo Button Styling */
+li .undo-btn {
+  background-color: #ffc107;
+  color: #333;
+}
+
+li .undo-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  ul li button {
+    margin-top: 0.5rem;
+  }
+}
