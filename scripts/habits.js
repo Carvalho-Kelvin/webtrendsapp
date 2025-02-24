@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async function() {
          await signOut(auth);
          console.log("User signed out successfully.");
          // Redirect to the login page (adjust the path if necessary)
-         window.location.href = "index.html";
+         window.location.href = "/webtrendsapp/index.html";
        } catch (error) {
          console.error("Error signing out:", error);
        }
