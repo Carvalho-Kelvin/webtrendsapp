@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/webtrendsapp/">
   <title>Habit Tracker - Sign In</title>
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="manifest" href="../manifest.json">
-  <link rel="icon" type="image/x-icon" href="../icons/favicon.ico">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 </head>
 <body>
   <header>
@@ -19,9 +20,9 @@
     <button id="registerBiometric">Register Face</button>
     <button id="authenticateBiometric">Sign In with Face</button>
   </main>
-  <script type="module" src="../scripts/signIn.js"></script>
+  <script type="module" src="scripts/signIn.js"></script>
   <script type="module">
-    import { registerBiometric, authenticateBiometric } from "../scripts/biometric.js";
+    import { registerBiometric, authenticateBiometric } from "biometric.js";
     
     const registerBtn = document.getElementById('registerBiometric');
     const authBtn = document.getElementById('authenticateBiometric');
@@ -35,7 +36,7 @@
       const success = await authenticateBiometric();
       if (success) {
         // On successful biometric authentication, redirect to habits page.
-        window.location.href = "../app/habits.html";
+        window.location.href = "habits.html";
       } else {
         alert("Biometric authentication failed.");
       }
